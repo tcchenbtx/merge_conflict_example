@@ -2,4 +2,6 @@ def pow(base, exponent):
     """Replicate c++ pow function in python
        return base ** exponent
     """
-    return NotImplemented
+    if type(base) is not float:
+        raise TypeError("Base must be a float!")
+    return base ** exponent
